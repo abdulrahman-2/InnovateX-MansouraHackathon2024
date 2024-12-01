@@ -21,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} container bg-background antialiased`} dir="rtl">
+      <body
+        className={`${poppins.className} bg-background antialiased`}
+        dir="rtl"
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -29,7 +32,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {children}
+          <div className="container">{children}</div>
         </ThemeProvider>
       </body>
     </html>
