@@ -7,8 +7,9 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between max-w-6xl mx-auto">
     <div className="">
-      logo
+      7mani
     </div>
+    <h1>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h1>
     <div className="flex items-center gap-4">
       <Link href='/'>
       Home
