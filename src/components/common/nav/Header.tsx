@@ -23,7 +23,7 @@ const links = [
 
 const Header = () => {
   return (
-    <div className="flex h-20 items-center justify-between shadow-lg dark:shadow-gray-100/10 px-5">
+    <div className="flex h-20 items-center justify-between shadow-lg dark:shadow-gray-100/10 px-5 relative z-50">
       <div className="dark:hidden flex items-center relative h-60 w-60">
         <Image src={lightLogo} alt="logo" fill></Image>
       </div>
