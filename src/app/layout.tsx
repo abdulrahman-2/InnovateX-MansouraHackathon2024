@@ -1,12 +1,12 @@
-import { Poppins } from "next/font/google";
+import { Almarai } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import Header from "@/components/common/nav/Header";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+const almarai = Almarai({
+  subsets: ["arabic"],
+  weight: ["300","400", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} bg-background antialiased`}
+        className={`${almarai.className} bg-background antialiased`}
         dir="rtl"
       >
         <ThemeProvider
