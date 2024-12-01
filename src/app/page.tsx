@@ -5,6 +5,11 @@ const Home = () => {
   return (
     <div>
       <ModeToggle />
+      <h1>fhosgfkldsjglks</h1>
+      <h1>fhosgfkldsjglks</h1>
+      <h1>fhosgfkldsjglks</h1>
+      <h1>fhosgfkldsjglks</h1>
+      <h1>fhosgfkldsjglks</h1>
     </div>
   );
 };
