@@ -19,8 +19,9 @@ import product_18 from "@/assets/Data/دهانات/كابسي/صبغه اخشا�
 import product_19 from "@/assets/Data/دهانات/كابسي/لاكيه مط هاتريك ابيض (790).jpg";
 import product_20 from "@/assets/Data/كهرباء/السويدى الكتريك/سلك دش  CF160 (2520).jpg";
 import product_21 from "@/assets/Data/كهرباء/السويدى الكتريك/سلك دش C80 (2433).jpg";
+import { ProductType } from "@/lib/types";
 
-export const products = [
+export const products: ProductType[] = [
   {
     id: 1,
     name: "اكوا جليز (ورنيش مائي)",
@@ -57,7 +58,7 @@ export const products = [
     id: 5,
     name: "معجون 8800 800",
     category: "دهانات",
-    price: 142.28,
+    price: "142.28",
     brandName: "باكين",
     image: product_5,
   },
@@ -65,7 +66,7 @@ export const products = [
     id: 6,
     name: "ورنيش نترو ستار مط ZERO",
     category: "دهانات",
-    price: 177,
+    price: "177",
     brandName: "باكين",
     image: product_6,
   },
@@ -73,7 +74,7 @@ export const products = [
     id: 7,
     name: "ورنيش مط 1001",
     category: "دهانات",
-    price: 157.75,
+    price: "157.75",
     brandName: "جي ال سي",
     image: product_7,
   },
@@ -81,7 +82,7 @@ export const products = [
     id: 8,
     name: "صبغه اخشاب جي.بي.دبليو",
     category: "دهانات",
-    price: 101.5,
+    price: "101.5",
     brandName: "جي ال سي",
     image: product_8,
   },
@@ -89,7 +90,7 @@ export const products = [
     id: 9,
     name: "سوبر لاك ابيض",
     category: "دهانات",
-    price: 527,
+    price: "527",
     brandName: "جي ال سي",
     image: product_9,
   },
@@ -97,7 +98,7 @@ export const products = [
     id: 10,
     name: "ستورم شيلد بنيتريتنج سيلر",
     category: "دهانات",
-    price: 260,
+    price: "260",
     brandName: "جي ال سي",
     image: product_10,
   },
@@ -105,7 +106,7 @@ export const products = [
     id: 11,
     name: "جلتكس 2500",
     category: "دهانات",
-    price: 162.5,
+    price: "162.5",
     brandName: "جي ال سي",
     image: product_11,
   },
@@ -113,7 +114,7 @@ export const products = [
     id: 12,
     name: "معجون بلاستيك خارجى للمبانى",
     category: "دهانات",
-    price: 555,
+    price: "555",
     brandName: "جي ال سي",
     image: product_12,
   },
@@ -121,7 +122,7 @@ export const products = [
     id: 13,
     name: "مصلب بولى يوريثان مط 21",
     category: "دهانات",
-    price: 1528,
+    price: "1528",
     brandName: "جي ال سي",
     image: product_13,
   },
@@ -129,7 +130,7 @@ export const products = [
     id: 14,
     name: "لاكيه مط هاتريك ابيض",
     category: "دهانات",
-    price: 790,
+    price: "790",
     brandName: "كابسي",
     image: product_14,
   },
@@ -137,7 +138,7 @@ export const products = [
     id: 15,
     name: "صبغه اخشاب لاتيكو",
     category: "دهانات",
-    price: 1694.88,
+    price: "1694.88",
     brandName: "كابسي",
     image: product_15,
   },
@@ -145,7 +146,7 @@ export const products = [
     id: 16,
     name: "سيلر نترة لاتيكو غامق",
     category: "دهانات",
-    price: 7201,
+    price: "7201",
     brandName: "كابسي",
     image: product_16,
   },
@@ -153,7 +154,7 @@ export const products = [
     id: 17,
     name: "دوكو بطانه لاتيكو فضي",
     category: "دهانات",
-    price: 1845.36,
+    price: "1845.36",
     brandName: "كابسي",
     image: product_17,
   },
@@ -161,7 +162,7 @@ export const products = [
     id: 18,
     name: "بلاستيك مط ممتاز",
     category: "دهانات",
-    price: 2069,
+    price: "2069",
     brandName: "كابسي",
     image: product_18,
   },
@@ -169,7 +170,7 @@ export const products = [
     id: 19,
     name: "برايمر-احمر-رصاصى",
     category: "دهانات",
-    price: 1500,
+    price: "1500",
     brandName: "كابسي",
     image: product_19,
   },
@@ -177,7 +178,7 @@ export const products = [
     id: 20,
     name: "CF160 سلك دش",
     category: "كهرباء",
-    price: 2520,
+    price: "2520",
     brandName: "فينوس",
     image: product_20,
   },
@@ -185,7 +186,7 @@ export const products = [
     id: 21,
     name: "C80 سلك دش",
     category: "كهرباء",
-    price: 2433,
+    price: "2433",
     brandName: "فينوس",
     image: product_21,
   },
@@ -193,7 +194,7 @@ export const products = [
   //   id: 23,
   //   name: "سلك نحاس جهد 500300 كيلوفولت",
   //   category: "كهرباء",
-  //   price: 25.5,
+  //   price: "25.5,
   //   brandName: "فينوس",
   //   image: product_23,
   // },

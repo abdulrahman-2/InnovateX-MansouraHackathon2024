@@ -1,5 +1,3 @@
-import { StaticImageData } from "next/image";
-
 export interface NavLinkType {
   title: string;
   href: string;
@@ -12,11 +10,11 @@ export type ServiceType = {
   image: string;
 };
 
-export type ProductType = {
+export interface ProductType {
   id: number;
   name: string;
-  category: string;
   price: number;
+  image: string;
   brandName: string;
-  image: StaticImageData;
-};
+  quantity: number;
+}

@@ -5,12 +5,17 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <div className="container">
-      <div className="h-[650px]  w-full relative ">
-        <Image src={hero} alt="image" fill className="object-contain" />
+    <div className="container relative">
+      <div className="h-[650px] w-full">
+        <Image
+          src={hero}
+          alt="image"
+          fill
+          className="object-contain object-left"
+        />
       </div>
       <div className="absolute top-40 right-[2rem] sm:right-[5rem]">
-        <p className=" text-5xl font-[400]">
+        <p className=" text-5xl font-[400] tracking-widest leading-[1.4]">
           <span
             className="text-[#DF5829] 
 "

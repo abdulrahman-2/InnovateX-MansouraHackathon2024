@@ -4,10 +4,12 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import Header from "@/components/common/nav/Header";
 import Footer from "@/components/common/footer/Footer";
+import StoreProvider from "@/components/layout/StoreProvider";
+import Notifications from "@/components/layout/Notifications";
 
 const almarai = Almarai({
   subsets: ["arabic"],
-  weight: ["300","400", "700", "800"],
+  weight: ["300", "400", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${almarai.className} bg-background antialiased`}
+        className={`${almarai.className} bg-background antialiased min-h-screen flex flex-col justify-between`}
         dir="rtl"
       >
         <ThemeProvider
@@ -32,9 +34,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          <div >{children}</div>
-          <Footer />
+          <StoreProvider>
+            <Header />
+            <div>{children}</div>
+            <Notifications />
+            <Footer />
+          </StoreProvider>
         </ThemeProvider>
       </body>
     </html>
