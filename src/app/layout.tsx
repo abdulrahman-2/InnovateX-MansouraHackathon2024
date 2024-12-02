@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import Header from "@/components/common/nav/Header";
+import Footer from "@/components/common/footer/Footer";
 
 const almarai = Almarai({
   subsets: ["arabic"],
@@ -32,7 +33,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <div className="container">{children}</div>
+          <div >{children}</div>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
