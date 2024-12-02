@@ -18,3 +18,8 @@ bun dev
 ## video Link ===>
 
 https://drive.google.com/file/d/1rRKkQt2v9Iz3f8HmplHVS1aU7lNBwv7Y/view?usp=drivesdk
+
+
+## Prototype Link ===>
+
+https://www.figma.com/design/8jQTWFRKXzQ0EJGrNlpzJW/Untitled?node-id=0-1&t=luJUg8EZDXVjxd1h-1
