@@ -18,7 +18,7 @@ const Card = ({ product }: { product: ProductType }) => {
     <div className="relative bg-card border border-border rounded-lg p-5 text-center flex flex-col gap-5 hover:-translate-y-7 hover:bg-[#DF582938] duration-300">
       <div
         onClick={handleAddToCart}
-        className="flex items-center z-10 justify-center gap-1 cursor-pointer text-sm bg-gray-200 p-2 rounded-lg absolute top-2 right-2"
+        className="flex items-center z-10 justify-center gap-1 cursor-pointer text-sm bg-gray-200 p-2 rounded-lg absolute top-2 right-2 dark:text-black"
       >
         <IoMdAddCircle size={18} />
         <span>اضف للعربه</span>

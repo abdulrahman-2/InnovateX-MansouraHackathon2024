@@ -1,9 +1,9 @@
-import { ProductType } from "@/lib/types";
+import { CartType } from "@/lib/types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 // Define a type for the cart state
 interface CartState {
-  cartItems: ProductType[];
+  cartItems: CartType[];
 }
 
 // Initial state with type
@@ -17,7 +17,7 @@ const CartSlice = createSlice({
   reducers: {
     addToCart: (
       state,
-      action: PayloadAction<Omit<ProductType, "quantity">>
+      action: PayloadAction<Omit<CartType, "quantity">>
     ) => {
       const itemIndex = state.cartItems.findIndex(
         (item) => item.id === action.payload.id

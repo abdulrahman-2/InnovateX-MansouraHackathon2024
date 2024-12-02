@@ -39,9 +39,20 @@ const CartProducts = () => {
   }, [cartItems]);
 
   // Handlers for cart actions
-  const handleIncrease = (id: number) => dispatch(increaseQuantity({ id }));
-  const handleDecrease = (id: number) => dispatch(decreaseQuantity({ id }));
-  const handleDelete = (id: number) => dispatch(removeFromCart({ id }));
+  const handleIncrease = (id: number) => {
+    dispatch(increaseQuantity({ id }));
+    toast.success("تم زيادة الكمية!");
+  };
+
+  const handleDecrease = (id: number) => {
+    dispatch(decreaseQuantity({ id }));
+    toast.success("تم تقليل الكمية!");
+  };
+
+  const handleDelete = (id: number) => {
+    dispatch(removeFromCart({ id }));
+    toast.error("تم حذف المنتج من السلة.");
+  };
 
   const createCheckout = async () => {
     try {
@@ -60,6 +71,7 @@ const CartProducts = () => {
       if (response.ok && data.success) {
         const stripe = await stripePromise;
         await stripe?.redirectToCheckout({ sessionId: data.id });
+        toast.success("تم إنشاء جلسة الدفع بنجاح!");
       } else {
         toast.error("فشل إنشاء جلسة الدفع.");
       }
@@ -71,7 +83,7 @@ const CartProducts = () => {
 
   return (
     <div className="container my-20">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 items-start">
         {/* Cart Items Section */}
         <div className="lg:col-span-4">
           <div>
@@ -108,10 +120,10 @@ const CartProducts = () => {
                       />
                       <div className="space-y-0.5">
                         <h2 className="font-semibold">{item.name}</h2>
-                        <p className="text-[#DF5829]">{item.brandName}</p>
+                        <p className="text-gray-500">{item.brandName}</p>
                         <button
                           onClick={() => handleDelete(item.id)}
-                          className="text-red-500 font-semibold"
+                          className="text-red-500 font-semibold mt-2"
                         >
                           حذف
                         </button>
@@ -155,7 +167,7 @@ const CartProducts = () => {
 
         {/* Order Summary Section */}
         <div className="lg:col-span-1">
-          <div className="border border-border p-5 rounded-md">
+          <div className="border border-border p-5 rounded-md md:sticky md:top-10">
             <h2 className="text-2xl font-semibold mb-5">ملخص الطلب</h2>
             <span className="h-[1px] w-full bg-[#DF5829] block"></span>
             <div className="flex flex-col gap-5 mt-5">

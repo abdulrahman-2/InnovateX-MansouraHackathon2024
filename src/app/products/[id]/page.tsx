@@ -30,11 +30,12 @@ const page = ({ params }: { params: { id: string } }) => {
           <h1 className="text-5xl text-[#DF5829]">{product?.price} جنية</h1>
           <Button className="bg-[#DF5829] py-6 w-3/4">أضف الى السلة </Button>
         </div>
-        <div className="w-1/2 relative h-80 border border-[#DF5829] rounded-xl">
+        <div className="w-1/2 relative h-96 border border-border overflow-hidden rounded-xl">
           <Image
             src={product?.image as string}
             alt={product?.name as string}
             fill
+            className="object-cover"
           />
         </div>
       </div>

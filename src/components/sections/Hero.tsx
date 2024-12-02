@@ -15,7 +15,7 @@ const Hero = () => {
         />
       </div>
       <div className="absolute top-40 right-[2rem] sm:right-[5rem]">
-        <p className=" text-5xl font-[400] tracking-widest leading-[1.4]">
+        <p className=" text-5xl font-[400] leading-[1.4]">
           <span
             className="text-[#DF5829] 
 "
@@ -23,7 +23,7 @@ const Hero = () => {
             لسنا الأسرع{" "}
           </span>
           فقط <br />
-          بل افضل جودة وراحة{" "}
+          بل افضل جودة وسعر{" "}
         </p>
         <Button className="mt-5 bg-[#DF5829] w-3/4"> اطلب تسعيره</Button>
       </div>
