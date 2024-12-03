@@ -36,7 +36,7 @@ const Card = ({ product }: { product: ProductType }) => {
       <span className=" first-letter:text-[#DF5829] font-semibold text-lg">
         {product.brandName}
       </span>
-      <h2 className="text-center text-gray-400">{product.name}</h2>
+      <h2 className="text-center text-gray-400">{product.title}</h2>
       <p className="text-[#DF5829] text-2xl font-bold">{product.price} جنية</p>
     </div>
   );

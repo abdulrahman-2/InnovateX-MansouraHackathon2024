@@ -12,20 +12,13 @@ export type ServiceType = {
   image: string;
 };
 
-export interface CartType {
+export interface ProductType {
   id: number;
-  name: string;
-  price: number;
-  image: string;
-  brandName: string;
-  quantity: number;
-}
-
-export type ProductType = {
-  id: number;
-  name: string;
+  title: string;
   category: string;
-  price: string;
+  price: number;
   brandName: string;
   image: string | StaticImageData;
-};
+  description?: string;
+  quantity?: number;
+}

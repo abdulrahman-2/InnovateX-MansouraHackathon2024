@@ -119,7 +119,7 @@ const CartProducts = () => {
                         height={100}
                       />
                       <div className="space-y-0.5">
-                        <h2 className="font-semibold">{item.name}</h2>
+                        <h2 className="font-semibold">{item.title}</h2>
                         <p className="text-gray-500">{item.brandName}</p>
                         <button
                           onClick={() => handleDelete(item.id)}
